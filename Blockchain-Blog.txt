@@ -1,0 +1,60 @@
+BLOCKCHAIN:
+
+Before we dive into the world of Blockchain, let us first take a small peek into the concept of centralized systems. Let us consider the scenario wherein users want to perform some sort of transaction (say of money or some other important documents). In centralized systems, there exist intermediaries like bank or Government, who ensure that the trust and genuineness of these transactions are intact. Therefore, centralized systems depend heavily on middlemen who perform certain important operations to ensure the authenticity and integrity of these transactions and build trust in such a transactional process.
+Now, what if we could perform these transactions without the interference of a third-party intermediary and still ensure the validity and authenticity of the transactions. This is where Blockchain comes into the picture.
+
+Blockchain in a nutshell:-
+A Blockchain is a type of distributed ledger or decentralized database that can be pictured as a chain of blocks wherein each block contains some useful information. The main purpose of this is to introduce a decentralized system that promotes the security and integrity of transactions. By timestamping (recording the time and date of the occurrence of the event) documents, this technique tries to prevent tampering of information and backdating of documents. Blockchain tries to ensure authenticity and eradicate duplicate records problem without the involvement of an intermediary party. Also, since the copies of a record exist simultaneously rather than being stored in a central location, it is more difficult to tamper with the same. Thus with the help of blockchain, we can securely transfer money, contracts, etc, without the interference of a third party. 
+
+Now, you may be wondering as to what exactly makes this blockchain secure. Well, worry not for we will look into some of the factors that help maintain the integrity and authenticity of blockchain so that we get a basic idea from the security angle.
+
+The security aspect of blockchain:-
+1) Hash --> Every block in the blockchain has a unique hash associated with it. This hash can be thought of as a fingerprint or DNA of the block, which can be used to identify the block and all of its contents. This hash is helpful from the security point of view as the hash changes when the contents of the block are altered. Therefore, it can be deduced from the hash of the block whether it has been manipulated or not. Also, if a hash of a block changes and since all the blocks are linked in a chain fashion in a blockchain (which we will look into more briefly as we move ahead in this blog), all the corresponding blocks become immediately invalid.
+
+2) Proof of Work --> Even though hashes are an excellent way to prevent tampering, but computers in today's age have the capability to calculate hundreds of thousands of hashes per second. In this way, a hacker can tamper with a block, and then recalculate the hashes of the corresponding blocks to make the blockchain valid again. To overcome this loophole, the concept of 'proof of work' is brought into the picture. A proof of work can be thought of as a kind of mathematical problem that requires a considerably large amount of effort to be put in to solve this problem. But, it takes much less effort to verify the result of the problem. This ensures that it will not be easy to tamper with a block and its subsequent blocks, for the hacker will have to recalculate the proof of work for all the blocks which is practically infeasible.
+
+3) Distributed P2P network --> The fact that blockchain is distributed makes it highly secure and reliable. Instead of a central entity managing the entire chain, a distributed peer-to-peer network is adopted. This means that a copy of the blockchain is provided to everyone who is involved in the network. Whenever a new transaction is initiated, it gets added to a block containing transactions that have been initiated recently. This block then needs to be verified by all the participants of the network (basically, they ensure that it is unaltered and genuine), and only then is it appended to the copy of the blockchain that all the participants have with them. In a sense, all the participants create a kind of consensus.  Thus, a new transaction is verified before it is successfully completed, hence maintaining the integrity of the network.
+
+With all these methods used in securing the blockchain network, it becomes an extremely costly and infeasible task to tamper with the information in the network.
+
+Now, let us take a brief look into the architecture of a blockchain.
+
+The Architecture of a Blockchain:-
+The basic unit of a blockchain network is a 'Block'. So, blockchain is literally a chain of blocks that contain certain useful information. The type of information depends upon the type of blockchain under consideration. But, irrespective of the type of blockchain, the first block of the chain is known as 'Genesis Block'.
+Each block has a block header that contains metadata accompanied by a lengthy record of the transactions recorded in the block.
+Some of the information stored in the header are Merkle root, timestamp, the hash of the current block, the hash of the previous block, and nonce.
+The hash of the previous block section contains the hash of the block preceding the current block and in this way, a chain of blocks is formed. This helps in maintaining the integrity of the blockchain because if any block is altered, its hash value changes thus immediately rendering all the succeeding blocks in the chain invalid as they no longer contain the correct hash of the previous block (the next block still has the old hash of the current block). 
+
+Who can access a Blockchain:- 
+Generally, the network is open for the public to view information related to transactions, but people who have the power to verify and add a block depends on the type of blockchain. There are mainly three types in this context ->
+- Public (It allows anyone and everyone to verify and add a block of transactions)
+- Private (Only a specific group of people, assigned by the organisation that owns the network, are allowed to verify and add blocks to the chain) 
+- Consortium (only a group of oraganisations are allowed to carry out the verification and addition of blocks. This is some sense is a semi-private type of blockchain).
+
+
+Now, let us understand the overview of how a transaction occurs in a blockchain:-
+1) Let us consider that you want to pay someone some 'x' amount of money and for this reason, you initiate a transaction.
+
+2) This request is then broadcasted to every node in the network. 
+
+3) The participants (nodes) who contribute to the network by verifying and adding blocks are called 'Miners'. When the miners get a new transaction, they add it to a block. Now, which miner amongst a pool of miners, gets to add the block to the chain is determined in the following way. Every miner has to solve a mathematical problem that is assigned to them, which can only be solved by adopting a brute force approach and requires a powerful and fast computational setup. The first miner to crack the problem broadcasts his/her block (containing the solution to the problem in the form of nonce) to the other miners. Then these miners verify the same to avoid false validation of the block. 
+
+4) Once, the solution is verified, the miner who solved it gets a mining reward, and the tranasactions are added to the blockchain.
+
+Note: Once a block or transaction has been added to the chain, then it cannot be altered, thus ensuring the integrity of the system.
+
+Blockchain provides us with a lot of features that makes it so popular. Some of them are:- Time for the transaction is less, reliability, security, transparency, it is immutable, fraud prevention (with the help of consensus and decentralized feature of the same),etc.
+
+Let us now look at the final display before the curtains fall on this blog. We will look at some of the many ways in which blockchain can revolutionize the world:-
+1) Cryptocurrency -> All cryptocurrencies have blockchain as their base foundation technology. These cryptocurrencies will help remove the need for a central or intermediary interfernce in day to day transactions, thereby making the process much faster and also more secure. One of the most common example is that of Bitcoin.
+
+2) Healthcare -> With the help of blockchain technology, health care providers can ensure the secure storage of the patient's medical records. Also, the need for an intermediary to manage the transactions and records will diminish. It can be ensured that only the appropriate entity gets access to the records (like the concerned patient) and they can access it without much hassle.
+
+3) Smart Contracts -> Smart contracts are computer programs collected in a blockchain. They automatically execute and facilitate, verify, or negotiate a contract agreement. Smart contracts operate under a set of conditions that users agree to. When the conditions are satisfied, the terms of the agreement are automatically carried out. For example, You agree to pay to a company provided that they give you the material you require. Both parties will send their portion of the deal to the smart contract. If both sides abide by the agreement, it will exchange the payment with the material. But, if say the company fails to provide the material, it will automatically refund the payment you did back to you.
+
+4) Voting -> Use of blockchain in voting will help eliminate the chances of fraud and boost voter's turnout. Each vote can be stored in a block within the chain, making it nearly impossible to alter. The use of blockchain will also ensure transparency in the electoral process.
+
+5) Education Records -> Just like the records of a patient can be securely stored using blockchain technology, similarly, the educational record of the students and information about faculty and institute can be stored and retrieved ensuring the privacy and authenticity of the same.
+
+Hence, we can conclude that Blockchain technology has a huge potential to bring changes in a variety of sectors of society. With the increasing amounts of data in today's date, blockchain can be effectively utilized to provide a secure and robust channel for transactions and storage.
+
